@@ -6,7 +6,13 @@
 **核心原则：渲染器不认识故事。** 所有创作决定都在数据里，代码只负责执行。
 
 <p align="center">
-  <img src="docs/cover-galileo.jpg" width="800" alt="伽利略号的最后一天">
+  <img src="docs/highlight.gif" width="760" alt="20 秒高光：发射 → 撞木星 → 欧罗巴 → 冰下之海 → 落版">
+  <br>
+  <sub>20 秒高光（完整成片见 <a href="#release">Release</a>）</sub>
+</p>
+
+<p align="center">
+  <img src="docs/cover-galileo.jpg" width="760" alt="伽利略号的最后一天">
 </p>
 
 ---
@@ -183,6 +189,11 @@ io/                   输入输出
 不配乐也能跑，`score` 环节会自动跳过。
 
 ---
+
+## 成片与素材下载 {#release}
+
+- [伽利略号的最后一天 · 1080p 完整成片](../../releases) —— 21 镜 / 180 秒 / 带配乐
+- [SRT 字幕 / 封面 / 元数据](docs/) —— 交付层生成的产物
 
 ## 快速开始
 
