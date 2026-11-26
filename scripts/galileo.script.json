@@ -1,0 +1,99 @@
+{
+  "title": "伽利略号的最后一天",
+  "subtitle": "Galileo · 1989–2003",
+  "assets": {
+    "launch": "assets/galileo/launch-8913765.jpg",
+    "clean": "assets/galileo/launch-89PC-0698.jpg",
+    "traj": "assets/galileo/traj-S89-42940.jpg",
+    "jup-io": "assets/galileo/impact-ARC-1994-AC94-0182.jpg",
+    "scars": "assets/galileo/impact-PIA00139.jpg",
+    "grs": "assets/galileo/jupiter-PIA21985.jpg",
+    "probe": "assets/galileo/probe2-ARC-1989-AC89-0146-2.jpg",
+    "probe-atmo": "assets/galileo/probe-ARC-1981-AC81-0174.jpg",
+    "gal-io": "assets/galileo/craft-S89-42941.jpg",
+    "europa": "assets/galileo/europa-PIA19048.jpg",
+    "chaos": "assets/galileo/europa-PIA23873.jpg",
+    "ocean": "assets/galileo/ocean-PIA10131.jpg",
+    "interior": "assets/galileo/ocean-PIA26438.jpg",
+    "crescent": "assets/galileo/jupiter-PIA21376.jpg"
+  },
+  "acts": [
+    {
+      "id": "a1", "title": "出发", "mood": "amber",
+      "beats": [
+        { "text": "1989 年 10 月 18 日\n亚特兰蒂斯号升空",
+          "asset": "launch", "caption": "NASA · STS-34 · 1989-10-18" },
+        { "text": "它叫伽利略\n两吨半 带着一台小探测器",
+          "asset": "clean", "caption": "伽利略号 · 总装" },
+        { "text": "它要去的木星\n在六亿公里以外",
+          "asset": "traj", "caption": "伽利略号 · 艺术构想" },
+        { "text": "没有一枚火箭\n能一次把它送到那里",
+          "graphics": "timeline", "marks": ["1989", "1990", "1991", "1992", "1993", "1994", "1995"] }
+      ]
+    },
+    {
+      "id": "a2", "title": "慢路", "mood": "steel",
+      "beats": [
+        { "text": "它决定 向行星借力\n金星一次 地球两次", "accent": ["借力"],
+          "graphics": "dots", "count": 240 },
+        { "text": "1994 年\n一串彗星碎片 正撞向木星",
+          "asset": "jup-io", "caption": "木星与木卫一 · 艺术构想" },
+        { "text": "撞击的疤痕\n比地球还大",
+          "asset": "scars", "caption": "NASA · 哈勃望远镜 · 1994" },
+        { "text": "那一刻 全人类只有它在场", "accent": ["在场"],
+          "asset": "grs" },
+        { "text": "六年 它一次次掠过", "asset": "jup-io" }
+      ]
+    },
+    {
+      "id": "a3", "title": "发现", "mood": "jade",
+      "beats": [
+        { "text": "它放出了一个小探测器\n那个探测器 只活了一个小时",
+          "asset": "probe", "caption": "伽利略大气探测器 · 艺术构想" },
+        { "text": "它第一次 尝到了木星的味道", "accent": ["味道"],
+          "asset": "probe-atmo" },
+        { "text": "它看见木卫一在喷发\n太阳系最暴躁的地方",
+          "asset": "gal-io", "caption": "伽利略号掠过木卫一 · 艺术构想" },
+        { "text": "然后是欧罗巴\n一颗被冰封住的月亮",
+          "asset": "europa", "caption": "NASA · 欧罗巴表面 · 伽利略号" }
+      ]
+    },
+    {
+      "id": "a4", "title": "证据", "mood": "deep",
+      "beats": [
+        { "text": "冰壳在破裂\n裂缝里 涌出过温暖的东西",
+          "asset": "chaos", "caption": "NASA · 欧罗巴混沌地形" },
+        { "text": "冰层下面\n有一片海", "accent": ["海"],
+          "asset": "ocean", "caption": "欧罗巴冰壳与海洋 · 剖面构想" },
+        { "text": "它没有看见那片海", "graphics": "waves", "n": 12 },
+        { "text": "但它看见了海的证据\n木星的磁场 在欧罗巴附近抖动",
+          "accent": ["证据"], "graphics": "waves", "n": 10 }
+      ]
+    },
+    {
+      "id": "a5", "title": "赴死", "mood": "amber",
+      "beats": [
+        { "text": "2003 年\n它的燃料快用完了\n十四年的辐射 已经毁了它的电路",
+          "asset": "crescent", "caption": "木星新月 · 卡西尼号", "brightness": 1.5 },
+        { "text": "科学家做了一个决定\n让它撞向木星", "accent": ["撞向木星"],
+          "asset": "interior" },
+        { "text": "因为冰下 可能有生命", "accent": ["生命"], "asset": "chaos" },
+        { "text": "2003 年 9 月 21 日\n18 时 57 分", "graphics": "waves", "n": 8,
+          "brightness": 2.0 }
+      ]
+    }
+  ],
+  "audio": {
+    "track": { "src": "assets/music/Eternal Hope.mp3", "title": "Eternal Hope",
+               "author": "Kevin MacLeod", "license": "CC-BY",
+               "source_url": "https://incompetech.com/music/royalty-free/index.html",
+               "track_start": 12, "gain": 2.8 },
+    "envelope": [{ "t": 0, "gain": 0.14 }, { "t": 30, "gain": 0.26 },
+                 { "t": 60, "gain": 0.32 }, { "t": 90, "gain": 0.28 },
+                 { "t": 130, "gain": 0.32 }, { "t": 160, "gain": 0.36 }]
+  },
+  "credits": {
+    "attribution": ["影像：NASA Image and Video Library（公有领域）",
+                    "配乐：Eternal Hope — Kevin MacLeod (incompetech.com)，CC BY 4.0"]
+  }
+}

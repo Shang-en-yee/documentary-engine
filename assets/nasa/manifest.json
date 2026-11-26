@@ -1,0 +1,90 @@
+[
+  {
+    "file": "01-launch.jpg",
+    "id": "PIA17464",
+    "title": "Voyager 1 Launch 1977",
+    "page": "https://images.nasa.gov/details/PIA17464",
+    "license": "public-domain",
+    "bytes": 183540
+  },
+  {
+    "file": "02-record.jpg",
+    "id": "PIA21741",
+    "title": "Voyager: Preparing the Golden Record",
+    "page": "https://images.nasa.gov/details/PIA21741",
+    "license": "public-domain",
+    "bytes": 115904
+  },
+  {
+    "file": "03-spacecraft.jpg",
+    "id": "PIA22915",
+    "title": "Voyager 2 Spacecraft Instruments",
+    "page": "https://images.nasa.gov/details/PIA22915",
+    "license": "public-domain",
+    "bytes": 128504
+  },
+  {
+    "file": "04-jupiter.jpg",
+    "id": "PIA21376",
+    "title": "Crescent Jupiter with the Great Red Spot",
+    "page": "https://images.nasa.gov/details/PIA21376",
+    "license": "public-domain",
+    "bytes": 35454
+  },
+  {
+    "file": "05-saturn.jpg",
+    "id": "PIA01486",
+    "title": "Composition Differences within Saturn Rings",
+    "page": "https://images.nasa.gov/details/PIA01486",
+    "license": "public-domain",
+    "bytes": 132245
+  },
+  {
+    "file": "06-uranus.jpg",
+    "id": "PIA18182",
+    "title": "Uranus as seen by NASA Voyager 2",
+    "page": "https://images.nasa.gov/details/PIA18182",
+    "license": "public-domain",
+    "bytes": 48834
+  },
+  {
+    "file": "07-neptune.jpg",
+    "id": "PIA01493",
+    "title": "Neptune Rings",
+    "page": "https://images.nasa.gov/details/PIA01493",
+    "license": "public-domain",
+    "bytes": 149565
+  },
+  {
+    "file": "08-pale-blue-dot.jpg",
+    "id": "PIA00452",
+    "title": "Solar System Portrait - Earth as Pale Blue Dot",
+    "page": "https://images.nasa.gov/details/PIA00452",
+    "license": "public-domain",
+    "bytes": 35200
+  },
+  {
+    "file": "09-heliopause.jpg",
+    "id": "PIA04927",
+    "title": "Voyager Approaches Final Frontier Artist Concept",
+    "page": "https://images.nasa.gov/details/PIA04927",
+    "license": "public-domain",
+    "bytes": 30014
+  },
+  {
+    "file": "10-interstellar.jpg",
+    "id": "PIA17045",
+    "title": "Voyager Captures Sounds of Interstellar Space",
+    "page": "https://images.nasa.gov/details/PIA17045",
+    "license": "public-domain",
+    "bytes": 61792
+  },
+  {
+    "file": "11-earth.jpg",
+    "id": "sl4-143-4707",
+    "title": "View of Skylab space station cluster in Earth orbit from CSM",
+    "page": "https://images.nasa.gov/details/sl4-143-4707",
+    "license": "public-domain",
+    "bytes": 556295
+  }
+]

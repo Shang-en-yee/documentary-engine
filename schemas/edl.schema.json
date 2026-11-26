@@ -1,0 +1,198 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://film-engine.local/edl.schema.json",
+  "title": "纪录片引擎 EDL (Edit Decision List)",
+  "description": "整条流水线唯一的契约文件。渲染器只认识这个格式，不认识故事。",
+  "type": "object",
+  "required": ["version", "meta", "acts", "shots"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "type": "string", "enum": ["1.0"] },
+
+    "meta": {
+      "type": "object",
+      "required": ["title", "duration", "fps", "resolution"],
+      "properties": {
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "thesis": { "type": "string", "description": "一句话立意，用于校验全片一致性" },
+        "duration": { "type": "number", "minimum": 10, "maximum": 900 },
+        "fps": { "type": "integer", "enum": [24, 25, 30, 60] },
+        "resolution": {
+          "type": "array", "items": { "type": "integer" },
+          "minItems": 2, "maxItems": 2
+        },
+        "fingerprint_basis": { "type": "string", "description": "参考片链接（用于风格溯源）" }
+      }
+    },
+
+    "assets": {
+      "type": "array",
+      "description": "全部外部素材。每条都必须带 license 与 source_url，质检会强制检查。",
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "src", "license"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "kind": { "enum": ["archive", "screenshot", "generated", "stock_video"] },
+          "src": { "type": "string", "description": "assets/ 下的相对路径" },
+          "license": { "enum": ["public-domain", "CC0", "CC-BY", "CC-BY-SA", "own", "permission"] },
+          "source_url": { "type": "string" },
+          "attribution": { "type": "string", "description": "CC-BY 类必须填写" },
+          "resolution": { "type": "array", "items": { "type": "integer" } },
+          "subject_tags": { "type": "array", "items": { "type": "string" } },
+          "era": { "type": "string" }
+        }
+      }
+    },
+
+    "moods": {
+      "type": "object",
+      "description": "色彩状态。段落一换，色相就换（硬切，不渐变）。",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["lift", "tint", "sat"],
+        "properties": {
+          "lift": { "type": "array", "items": { "type": "number" }, "minItems": 3, "maxItems": 3 },
+          "tint": { "type": "array", "items": { "type": "number" }, "minItems": 3, "maxItems": 3 },
+          "sat": { "type": "number", "minimum": 0, "maximum": 2 },
+          "hue": { "type": "number", "description": "用于文档与校验的参考色相" }
+        }
+      }
+    },
+
+    "acts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "t0", "t1", "mood"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "t0": { "type": "number" },
+          "t1": { "type": "number" },
+          "mood": { "type": "string" },
+          "dramatic_function": { "enum": ["setup", "turn", "reveal", "quiet", "climax", "coda"] }
+        }
+      }
+    },
+
+    "shots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "t0", "t1"],
+        "properties": {
+          "id": { "type": "string" },
+          "act": { "type": "string" },
+          "t0": { "type": "number", "minimum": 0 },
+          "t1": { "type": "number" },
+          "asset": { "type": ["string", "null"], "description": "指向 assets[].id；程序图形镜为 null" },
+
+          "optics": {
+            "type": "object",
+            "properties": {
+              "perspective": { "type": "number", "minimum": 0, "maximum": 1 },
+              "rotate": { "type": "number", "description": "角度" },
+              "crop": { "type": "array", "items": { "type": "number" }, "minItems": 4, "maxItems": 4 }
+            }
+          },
+
+          "motion": {
+            "type": "object",
+            "required": ["type"],
+            "properties": {
+              "type": { "enum": ["kenburns", "pan", "static", "internal", "camera3d"] },
+              "zoom": { "type": "number", "description": "整镜缩放比例，建议 0.02–0.06（对应 0.2–1.5%/秒）" },
+              "pan": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 },
+              "ease": { "enum": ["linear", "easeInOut", "easeOut"] }
+            }
+          },
+
+          "grade": { "type": "string", "description": "覆盖所属 act 的 mood" },
+
+          "texts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["tier", "t", "lines"],
+              "properties": {
+                "tier": { "enum": ["T1", "T2", "T3", "T4", "T5", "T6"],
+                  "description": "T1主字幕 T2引语 T3数据标注 T4角落计数 T5资料出处 T6时间刻度" },
+                "t": { "type": "number" },
+                "dur": { "type": "number" },
+                "lines": { "type": "array", "items": { "type": "string" } },
+                "accent": { "type": "array", "items": { "type": "string" },
+                  "description": "染成金色的词。每句 1–2 个概念名词或数字" },
+                "mode": { "enum": ["accumulate", "fade", "typewriter"] },
+                "pos": { "enum": ["center", "bottom", "tl", "tr", "bl", "br"] }
+              }
+            }
+          },
+
+          "graphics": {
+            "type": "array",
+            "description": "程序图形。kind 即镜头模板，引擎只实现这些 kind。",
+            "items": {
+              "type": "object",
+              "required": ["kind"],
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "grid3d", "grid2d", "polar_grid", "ring_ticks", "axis_ticks",
+                    "vline", "hline", "counter", "progress_ring", "timeline_axis",
+                    "bar_chart", "iso_bars", "curve_fit", "scatter_axis",
+                    "particles_3d", "accretion_disk", "aurora_plane", "earth_globe",
+                    "light_streak", "code_wall", "highlight_box", "checklist"
+                  ]
+                },
+                "params": { "type": "object", "additionalProperties": true }
+              }
+            }
+          },
+
+          "transition_in": { "enum": ["cut", "flash", "black", "dissolve", "whip"] },
+          "transition_out": { "enum": ["cut", "flash", "black", "dissolve", "whip"] }
+        }
+      }
+    },
+
+    "audio": {
+      "type": "object",
+      "properties": {
+        "track": {
+          "type": "object",
+          "required": ["src", "license"],
+          "properties": {
+            "src": { "type": "string" },
+            "license": { "enum": ["CC0", "CC-BY", "own", "permission", "public-domain"] },
+            "source_url": { "type": "string" },
+            "bpm": { "type": "number" }
+          }
+        },
+        "envelope": {
+          "type": "array",
+          "description": "响度曲线，单位秒 + 相对增益",
+          "items": {
+            "type": "object",
+            "required": ["t", "gain"],
+            "properties": { "t": { "type": "number" }, "gain": { "type": "number" } }
+          }
+        },
+        "silence_windows": {
+          "type": "array",
+          "description": "无字幕窗口。高潮段建议 ≥ 25s。",
+          "items": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 }
+        }
+      }
+    },
+
+    "credits": {
+      "type": "object",
+      "properties": {
+        "disclaimer": { "type": "string", "description": "如：片中某某一幕为设想，非事实" },
+        "attribution": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

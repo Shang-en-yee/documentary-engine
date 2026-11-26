@@ -1,0 +1,1557 @@
+{
+  "version": "1.0",
+  "meta": {
+    "title": "单程票",
+    "subtitle": "旅行者一号",
+    "thesis": "人类第一次远行，是一张没有返程的票",
+    "duration": 180,
+    "fps": 30,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fingerprint_basis": "https://www.bilibili.com/video/BV1j8y8zgExn"
+  },
+  "assets": [
+    {
+      "id": "launch",
+      "kind": "archive",
+      "src": "assets/nasa/01-launch.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov/details/",
+      "subject_tags": [
+        "rocket",
+        "launch",
+        "1977"
+      ],
+      "era": "1977"
+    },
+    {
+      "id": "record",
+      "kind": "archive",
+      "src": "assets/nasa/02-record.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov/details/",
+      "subject_tags": [
+        "golden-record",
+        "people"
+      ],
+      "era": "1977"
+    },
+    {
+      "id": "craft",
+      "kind": "archive",
+      "src": "assets/nasa/03-spacecraft.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov/details/",
+      "subject_tags": [
+        "diagram",
+        "spacecraft"
+      ],
+      "era": "1977"
+    },
+    {
+      "id": "jupiter",
+      "kind": "archive",
+      "src": "assets/nasa/04-jupiter.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov/details/",
+      "subject_tags": [
+        "jupiter",
+        "planet"
+      ],
+      "era": "1979"
+    },
+    {
+      "id": "saturn",
+      "kind": "archive",
+      "src": "assets/nasa/05-saturn.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov/details/",
+      "subject_tags": [
+        "saturn",
+        "rings"
+      ],
+      "era": "1980"
+    },
+    {
+      "id": "uranus",
+      "kind": "archive",
+      "src": "assets/nasa/06-uranus.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov/details/",
+      "subject_tags": [
+        "uranus",
+        "planet"
+      ],
+      "era": "1986"
+    },
+    {
+      "id": "neptune",
+      "kind": "archive",
+      "src": "assets/nasa/07-neptune.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov/details/",
+      "subject_tags": [
+        "neptune",
+        "rings"
+      ],
+      "era": "1989"
+    },
+    {
+      "id": "pale-blue-dot",
+      "kind": "archive",
+      "src": "assets/nasa/08-pale-blue-dot.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov/details/",
+      "subject_tags": [
+        "earth",
+        "pale-blue-dot"
+      ],
+      "era": "1990"
+    },
+    {
+      "id": "heliopause",
+      "kind": "archive",
+      "src": "assets/nasa/09-heliopause.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov/details/",
+      "subject_tags": [
+        "diagram",
+        "heliopause"
+      ],
+      "era": "2012"
+    },
+    {
+      "id": "plasma",
+      "kind": "archive",
+      "src": "assets/nasa/10-interstellar.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov/details/",
+      "subject_tags": [
+        "data",
+        "spectrogram"
+      ],
+      "era": "2012"
+    },
+    {
+      "id": "earth",
+      "kind": "archive",
+      "src": "assets/nasa/11-earth.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov/details/",
+      "subject_tags": [
+        "earth",
+        "orbit"
+      ],
+      "era": "1977"
+    }
+  ],
+  "moods": {
+    "amber": {
+      "lift": [
+        1.06,
+        1.0,
+        0.86
+      ],
+      "tint": [
+        0.12,
+        0.07,
+        0.0
+      ],
+      "sat": 0.88,
+      "hue": 42
+    },
+    "steel": {
+      "lift": [
+        0.94,
+        0.98,
+        1.08
+      ],
+      "tint": [
+        0.0,
+        0.03,
+        0.11
+      ],
+      "sat": 0.92,
+      "hue": 212
+    },
+    "deep": {
+      "lift": [
+        0.9,
+        0.96,
+        1.06
+      ],
+      "tint": [
+        0.0,
+        0.05,
+        0.12
+      ],
+      "sat": 0.8,
+      "hue": 218
+    },
+    "neutral": {
+      "lift": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tint": [
+        0.02,
+        0.02,
+        0.03
+      ],
+      "sat": 0.55,
+      "hue": 60
+    }
+  },
+  "acts": [
+    {
+      "id": "a1",
+      "title": "出发",
+      "t0": 0,
+      "t1": 40,
+      "mood": "amber",
+      "dramatic_function": "setup"
+    },
+    {
+      "id": "a2",
+      "title": "大巡游",
+      "t0": 40,
+      "t1": 88,
+      "mood": "steel",
+      "dramatic_function": "turn"
+    },
+    {
+      "id": "a3",
+      "title": "回望",
+      "t0": 88,
+      "t1": 126,
+      "mood": "deep",
+      "dramatic_function": "reveal"
+    },
+    {
+      "id": "a4",
+      "title": "出界",
+      "t0": 126,
+      "t1": 158,
+      "mood": "steel",
+      "dramatic_function": "quiet"
+    },
+    {
+      "id": "a5",
+      "title": "单程票",
+      "t0": 158,
+      "t1": 180,
+      "mood": "amber",
+      "dramatic_function": "coda"
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "act": "a1",
+      "t0": 0,
+      "t1": 10,
+      "asset": "launch",
+      "grade": "amber",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.05,
+        "pan": [
+          0.0,
+          0.02
+        ],
+        "ease": "linear"
+      },
+      "graphics": [
+        {
+          "kind": "embers",
+          "params": {
+            "count": 90,
+            "x0": 0.28,
+            "seed": 3
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.6,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "NASA · 1977 年 8 月 20 日"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 1.2,
+          "mode": "accumulate",
+          "lines": [
+            "1977 年 8 月 20 日"
+          ],
+          "accent": [
+            "1977"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 5.4,
+          "mode": "accumulate",
+          "lines": [
+            "一枚火箭从佛罗里达升空"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "black",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s02",
+      "act": "a1",
+      "t0": 10,
+      "t1": 18,
+      "asset": "craft",
+      "grade": "amber",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.045,
+        "pan": [
+          -0.01,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.3,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "NASA · 旅行者号探测器结构图"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 0.9,
+          "mode": "accumulate",
+          "lines": [
+            "它只有八百多公斤"
+          ],
+          "accent": [
+            "八百"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 3.25,
+          "mode": "accumulate",
+          "lines": [
+            "带的东西很轻"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "brightness": 1.75
+    },
+    {
+      "id": "s03",
+      "act": "a1",
+      "t0": 18,
+      "t1": 28,
+      "asset": "record",
+      "grade": "amber",
+      "motion": {
+        "type": "kenburns",
+        "zoom": -0.05,
+        "pan": [
+          0.0,
+          0.01
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.5,
+          "mode": "accumulate",
+          "lines": [
+            "也带走了一样不科学的东西"
+          ],
+          "accent": []
+        },
+        {
+          "tier": "T1",
+          "t": 4.03,
+          "mode": "accumulate",
+          "lines": [
+            "一张镀金的铜唱片"
+          ],
+          "accent": [
+            "镀金"
+          ]
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s04",
+      "act": "a1",
+      "t0": 28,
+      "t1": 40,
+      "asset": "record",
+      "grade": "amber",
+      "optics": {
+        "crop": [
+          0.18,
+          0.12,
+          0.6,
+          0.6
+        ]
+      },
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.055,
+        "pan": [
+          0.02,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [
+        {
+          "kind": "scatter_axis",
+          "params": {
+            "y": 0.3,
+            "count": 115,
+            "seed": 88,
+            "dur": 2.2
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T3",
+          "t": 0.8,
+          "mode": "fade",
+          "lines": [
+            "115 张图片",
+            "55 种语言的问候"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 6.4,
+          "mode": "accumulate",
+          "lines": [
+            "还有九十分钟的音乐"
+          ],
+          "accent": []
+        },
+        {
+          "tier": "T1",
+          "t": 9.05,
+          "mode": "accumulate",
+          "lines": [
+            "和一段心跳"
+          ],
+          "accent": [
+            "心跳"
+          ]
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "black"
+    },
+    {
+      "id": "s05",
+      "act": "a2",
+      "t0": 40,
+      "t1": 48,
+      "asset": "jupiter",
+      "grade": "steel",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.05,
+        "pan": [
+          0.01,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [
+        {
+          "kind": "starfield",
+          "params": {
+            "count": 260,
+            "drift": 5,
+            "seed": 11
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.4,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "NASA · 木星大红斑 · 1979"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 1.0,
+          "mode": "accumulate",
+          "lines": [
+            "1979 年 3 月 它掠过木星"
+          ],
+          "accent": [
+            "木星"
+          ]
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s06",
+      "act": "a2",
+      "t0": 48,
+      "t1": 56,
+      "asset": "jupiter",
+      "grade": "steel",
+      "optics": {
+        "crop": [
+          0.2,
+          0.1,
+          0.55,
+          0.55
+        ]
+      },
+      "motion": {
+        "type": "kenburns",
+        "zoom": -0.045,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [
+        {
+          "kind": "starfield",
+          "params": {
+            "count": 300,
+            "drift": 7,
+            "seed": 12
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.6,
+          "mode": "accumulate",
+          "lines": [
+            "它借走了一点木星的速度"
+          ],
+          "accent": [
+            "速度"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 3.84,
+          "mode": "accumulate",
+          "lines": [
+            "代价是被甩向更远的地方"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s07",
+      "act": "a2",
+      "t0": 56,
+      "t1": 66,
+      "asset": "saturn",
+      "grade": "steel",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.05,
+        "pan": [
+          -0.02,
+          0.01
+        ],
+        "ease": "linear"
+      },
+      "graphics": [
+        {
+          "kind": "starfield",
+          "params": {
+            "count": 220,
+            "drift": 6,
+            "seed": 13
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.4,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "NASA · 土星环 · 1980"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 1.0,
+          "mode": "accumulate",
+          "lines": [
+            "1980 年 11 月 土星环铺开"
+          ],
+          "accent": [
+            "土星环"
+          ]
+        },
+        {
+          "tier": "T3",
+          "t": 5.2,
+          "mode": "fade",
+          "lines": [
+            "宽 20 万公里",
+            "厚不到 1 公里"
+          ]
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s08",
+      "act": "a2",
+      "t0": 66,
+      "t1": 76,
+      "asset": "uranus",
+      "grade": "steel",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.055,
+        "pan": [
+          0.0,
+          -0.01
+        ],
+        "ease": "linear"
+      },
+      "graphics": [
+        {
+          "kind": "starfield",
+          "params": {
+            "count": 180,
+            "drift": 4,
+            "seed": 14
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.4,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "NASA · 天王星 · 1986"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 1.0,
+          "mode": "accumulate",
+          "lines": [
+            "1986 年 天王星"
+          ],
+          "accent": [
+            "天王星"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 3.94,
+          "mode": "accumulate",
+          "lines": [
+            "一颗几乎躺着自转的行星"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s09",
+      "act": "a2",
+      "t0": 76,
+      "t1": 84.0,
+      "asset": "neptune",
+      "grade": "steel",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.05,
+        "pan": [
+          0.01,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [
+        {
+          "kind": "starfield",
+          "params": {
+            "count": 240,
+            "drift": 6,
+            "seed": 15
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.4,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "NASA · 海王星 · 1989"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 1.0,
+          "mode": "accumulate",
+          "lines": [
+            "1989 年 海王星"
+          ],
+          "accent": [
+            "海王星"
+          ]
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "black"
+    },
+    {
+      "id": "s09a",
+      "act": "a2",
+      "t0": 84.0,
+      "t1": 84.8,
+      "asset": "jupiter",
+      "grade": "steel",
+      "motion": {
+        "type": "static"
+      },
+      "graphics": [],
+      "texts": [],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s09b",
+      "act": "a2",
+      "t0": 84.8,
+      "t1": 85.6,
+      "asset": "saturn",
+      "grade": "steel",
+      "motion": {
+        "type": "static"
+      },
+      "graphics": [],
+      "texts": [],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s09c",
+      "act": "a2",
+      "t0": 85.6,
+      "t1": 86.4,
+      "asset": "uranus",
+      "grade": "steel",
+      "motion": {
+        "type": "static"
+      },
+      "graphics": [],
+      "texts": [],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s09d",
+      "act": "a2",
+      "t0": 86.4,
+      "t1": 88.0,
+      "asset": "neptune",
+      "grade": "steel",
+      "motion": {
+        "type": "kenburns",
+        "zoom": -0.014,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [
+        {
+          "kind": "starfield",
+          "params": {
+            "count": 220,
+            "drift": 6,
+            "seed": 15
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.15,
+          "mode": "accumulate",
+          "lines": [
+            "四颗行星 一次走完"
+          ],
+          "accent": []
+        },
+        {
+          "tier": "T4",
+          "t": 0.9,
+          "pos": "tr",
+          "mode": "fade",
+          "lines": [
+            "这样的排列 176 年一次"
+          ]
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "black"
+    },
+    {
+      "id": "s10",
+      "act": "a3",
+      "t0": 88,
+      "t1": 98,
+      "asset": "earth",
+      "grade": "deep",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.045,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [
+        {
+          "kind": "starfield",
+          "params": {
+            "count": 200,
+            "drift": 3,
+            "seed": 16
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.8,
+          "mode": "accumulate",
+          "lines": [
+            "1990 年 2 月 14 日"
+          ],
+          "accent": [
+            "1990"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 5.0,
+          "mode": "accumulate",
+          "lines": [
+            "它已经飞了六十亿公里"
+          ],
+          "accent": [
+            "六十亿"
+          ]
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s11",
+      "act": "a3",
+      "t0": 98,
+      "t1": 108,
+      "asset": "pale-blue-dot",
+      "grade": "deep",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.06,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [
+        {
+          "kind": "starfield",
+          "params": {
+            "count": 260,
+            "drift": 2,
+            "seed": 17
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.6,
+          "mode": "accumulate",
+          "lines": [
+            "有人让它回头看一眼"
+          ],
+          "accent": []
+        },
+        {
+          "tier": "T1",
+          "t": 3.25,
+          "mode": "accumulate",
+          "lines": [
+            "它拍下了那张照片"
+          ],
+          "accent": [
+            "照片"
+          ]
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "brightness": 1.45
+    },
+    {
+      "id": "s12",
+      "act": "a3",
+      "t0": 108,
+      "t1": 122,
+      "asset": "pale-blue-dot",
+      "grade": "deep",
+      "optics": {
+        "crop": [
+          0.3,
+          0.22,
+          0.34,
+          0.34
+        ]
+      },
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.05,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [
+        {
+          "kind": "highlight_box",
+          "params": {
+            "x": 0.5,
+            "y": 0.5,
+            "w": 0.1,
+            "h": 0.1,
+            "label": "地球"
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.6,
+          "mode": "accumulate",
+          "lines": [
+            "地球是照片里的一个点"
+          ],
+          "accent": [
+            "一个点"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 3.54,
+          "mode": "accumulate",
+          "lines": [
+            "零点一二像素"
+          ],
+          "accent": [
+            "零点一二"
+          ]
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "brightness": 1.45
+    },
+    {
+      "id": "s13",
+      "act": "a3",
+      "t0": 122,
+      "t1": 126,
+      "asset": "pale-blue-dot",
+      "grade": "deep",
+      "optics": {
+        "crop": [
+          0.3,
+          0.22,
+          0.34,
+          0.34
+        ]
+      },
+      "motion": {
+        "type": "static"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T2",
+          "t": 0.3,
+          "mode": "fade",
+          "lines": [
+            "“再看看那个点 那是这里 那是我们”"
+          ],
+          "accent": [
+            "那是我们"
+          ]
+        },
+        {
+          "tier": "T5",
+          "t": 0.8,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "卡尔·萨根 · 1994"
+          ]
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "black",
+      "brightness": 1.45
+    },
+    {
+      "id": "s14",
+      "act": "a4",
+      "t0": 126,
+      "t1": 136,
+      "asset": "heliopause",
+      "grade": "steel",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.05,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [
+        {
+          "kind": "starfield",
+          "params": {
+            "count": 220,
+            "drift": 4,
+            "seed": 18
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.4,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "NASA 概念图 · 日球层"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 1.0,
+          "mode": "accumulate",
+          "lines": [
+            "2012 年 8 月"
+          ],
+          "accent": [
+            "2012"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 3.94,
+          "mode": "accumulate",
+          "lines": [
+            "它穿过了日球层顶"
+          ],
+          "accent": [
+            "日球层顶"
+          ]
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "text_y": 17
+    },
+    {
+      "id": "s15",
+      "act": "a4",
+      "t0": 136,
+      "t1": 141.0,
+      "asset": "plasma",
+      "grade": "steel",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.04,
+        "pan": [
+          0.01,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [
+        {
+          "kind": "code_wall",
+          "params": {
+            "size": 13,
+            "alpha": 0.16,
+            "speed": 24,
+            "density": 0.25,
+            "seed": 41
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.3,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "NASA · 等离子体波数据 · 2012–2013"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 0.9,
+          "mode": "accumulate",
+          "lines": [
+            "那是太阳风停下的地方"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "camera": {
+        "s0": 1.0,
+        "s1": 1.12,
+        "t0": 0.0,
+        "t1": 5.0,
+        "ease": "linear"
+      }
+    },
+    {
+      "id": "s15b",
+      "act": "a4",
+      "t0": 141.0,
+      "t1": 146.0,
+      "asset": null,
+      "grade": "steel",
+      "motion": {
+        "type": "static"
+      },
+      "camera": {
+        "s0": 1.0,
+        "s1": 1.26,
+        "sx0": 1.0,
+        "sx1": 1.32,
+        "sy0": 1.0,
+        "sy1": 1.22,
+        "t0": 0.2,
+        "t1": 4.8,
+        "ease": "easeInOut",
+        "cy": 0.44,
+        "parallax": 0.6
+      },
+      "graphics": [
+        {
+          "kind": "grid2d",
+          "depth": 0.2,
+          "t0": 0.0,
+          "params": {
+            "spacing": 58,
+            "alpha": 0.05
+          }
+        },
+        {
+          "kind": "wave_stack",
+          "depth": 0.7,
+          "t0": 0.15,
+          "params": {
+            "n": 15,
+            "x0": 0.09,
+            "x1": 0.96,
+            "y0": 0.36,
+            "span": 0.44,
+            "amp": 10,
+            "rise": 1.3,
+            "sum": true,
+            "sumY": 0.71,
+            "seed": 77,
+            "stagger": 0.04
+          }
+        },
+        {
+          "kind": "axis_labels",
+          "overlay": true,
+          "t0": 0.8,
+          "params": {
+            "x0": 0.09,
+            "x1": 0.96,
+            "y": 0.84,
+            "marks": [
+              "1977",
+              "1979",
+              "1982",
+              "1986",
+              "1989",
+              "1990",
+              "2004",
+              "2012",
+              "2018",
+              "2026"
+            ],
+            "rise": 1.0
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.5,
+          "mode": "accumulate",
+          "lines": [
+            "太阳系真正的边界"
+          ],
+          "accent": [
+            "边界"
+          ]
+        }
+      ],
+      "transition_in": "dissolve",
+      "transition_out": "cut",
+      "brightness": 1.7
+    },
+    {
+      "id": "s16",
+      "act": "a4",
+      "t0": 146,
+      "t1": 158,
+      "asset": "craft",
+      "grade": "steel",
+      "motion": {
+        "type": "kenburns",
+        "zoom": -0.05,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [
+        {
+          "kind": "starfield",
+          "params": {
+            "count": 200,
+            "drift": 3,
+            "seed": 20
+          }
+        },
+        {
+          "kind": "timeline_axis",
+          "params": {
+            "y": 0.115,
+            "active": 5,
+            "dur": 1.4,
+            "marks": [
+              "1977",
+              "1979",
+              "1980",
+              "1986",
+              "1989",
+              "2012",
+              "2026"
+            ]
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.6,
+          "mode": "accumulate",
+          "lines": [
+            "它现在是离人类最远的东西"
+          ],
+          "accent": [
+            "最远"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 4.13,
+          "mode": "accumulate",
+          "lines": [
+            "信号要走二十二小时"
+          ],
+          "accent": [
+            "二十二小时"
+          ]
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "black",
+      "brightness": 1.75,
+      "optics": {
+        "crop": [
+          0.22,
+          0.1,
+          0.56,
+          0.56
+        ]
+      }
+    },
+    {
+      "id": "s17",
+      "act": "a5",
+      "t0": 158,
+      "t1": 168,
+      "asset": "record",
+      "grade": "amber",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.05,
+        "pan": [
+          0.0,
+          0.01
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.6,
+          "mode": "accumulate",
+          "lines": [
+            "但那张唱片还在转"
+          ],
+          "accent": [
+            "唱片"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 2.95,
+          "mode": "accumulate",
+          "lines": [
+            "上面刻着人类的坐标"
+          ],
+          "accent": [
+            "坐标"
+          ]
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s18",
+      "act": "a5",
+      "t0": 168,
+      "t1": 174,
+      "asset": "record",
+      "grade": "amber",
+      "optics": {
+        "crop": [
+          0.22,
+          0.15,
+          0.55,
+          0.55
+        ]
+      },
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.05,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.4,
+          "mode": "accumulate",
+          "lines": [
+            "一颗脉冲星的位置"
+          ],
+          "accent": [
+            "脉冲星"
+          ]
+        },
+        {
+          "tier": "T4",
+          "t": 2.6,
+          "pos": "tr",
+          "mode": "fade",
+          "lines": [
+            "四万年后 才会靠近最近的恒星"
+          ]
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "black"
+    },
+    {
+      "id": "s19",
+      "act": "a5",
+      "t0": 174,
+      "t1": 180,
+      "asset": null,
+      "grade": "deep",
+      "motion": {
+        "type": "static"
+      },
+      "graphics": [
+        {
+          "kind": "beam_array",
+          "params": {
+            "count": 11,
+            "vx": 0.5,
+            "vy": 0.3,
+            "hue": "60,220,180"
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.4,
+          "mode": "accumulate",
+          "lines": [
+            "它没有回来"
+          ],
+          "accent": []
+        },
+        {
+          "tier": "T1",
+          "t": 2.1,
+          "mode": "accumulate",
+          "lines": [
+            "人类的第一次远行 是一张单程票"
+          ],
+          "accent": [
+            "单程票"
+          ]
+        }
+      ],
+      "transition_in": "black",
+      "transition_out": "black",
+      "brightness": 1.9
+    }
+  ],
+  "audio": {
+    "track": {
+      "src": "assets/music/Eternal Hope.mp3",
+      "license": "CC-BY",
+      "source_url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100696",
+      "bpm": 0
+    },
+    "envelope": [
+      {
+        "t": 0,
+        "gain": 0.1
+      },
+      {
+        "t": 18,
+        "gain": 0.22
+      },
+      {
+        "t": 40,
+        "gain": 0.36
+      },
+      {
+        "t": 88,
+        "gain": 0.18
+      },
+      {
+        "t": 120,
+        "gain": 0.28
+      },
+      {
+        "t": 150,
+        "gain": 0.36
+      },
+      {
+        "t": 168,
+        "gain": 0.42
+      },
+      {
+        "t": 180,
+        "gain": 0.4
+      }
+    ],
+    "silence_windows": [
+      [
+        108,
+        120
+      ],
+      [
+        174,
+        180
+      ]
+    ]
+  },
+  "credits": {
+    "disclaimer": "影像素材来自 NASA 公有领域档案。萨根引语为意译，非逐字引用。",
+    "attribution": [
+      "影像：NASA Image and Video Library (public domain)",
+      "配乐：Eternal Hope - Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "萨根引语为意译，非逐字引用"
+    ]
+  }
+}

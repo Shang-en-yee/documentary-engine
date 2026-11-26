@@ -1,0 +1,1350 @@
+{
+  "version": "1.0",
+  "meta": {
+    "title": "伽利略号的最后一天",
+    "subtitle": "Galileo · 1989–2003",
+    "duration": 180.0,
+    "fps": 30,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "language": "zh-CN"
+  },
+  "assets": [
+    {
+      "id": "launch",
+      "kind": "archive",
+      "src": "assets/galileo/launch-8913765.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov",
+      "caption": ""
+    },
+    {
+      "id": "clean",
+      "kind": "archive",
+      "src": "assets/galileo/launch-89PC-0698.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov",
+      "caption": ""
+    },
+    {
+      "id": "traj",
+      "kind": "archive",
+      "src": "assets/galileo/traj-S89-42940.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov",
+      "caption": ""
+    },
+    {
+      "id": "jup-io",
+      "kind": "archive",
+      "src": "assets/galileo/impact-ARC-1994-AC94-0182.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov",
+      "caption": ""
+    },
+    {
+      "id": "scars",
+      "kind": "archive",
+      "src": "assets/galileo/impact-PIA00139.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov",
+      "caption": ""
+    },
+    {
+      "id": "grs",
+      "kind": "archive",
+      "src": "assets/galileo/jupiter-PIA21985.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov",
+      "caption": ""
+    },
+    {
+      "id": "probe",
+      "kind": "archive",
+      "src": "assets/galileo/probe2-ARC-1989-AC89-0146-2.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov",
+      "caption": ""
+    },
+    {
+      "id": "probe-atmo",
+      "kind": "archive",
+      "src": "assets/galileo/probe-ARC-1981-AC81-0174.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov",
+      "caption": ""
+    },
+    {
+      "id": "gal-io",
+      "kind": "archive",
+      "src": "assets/galileo/craft-S89-42941.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov",
+      "caption": ""
+    },
+    {
+      "id": "europa",
+      "kind": "archive",
+      "src": "assets/galileo/europa-PIA19048.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov",
+      "caption": ""
+    },
+    {
+      "id": "chaos",
+      "kind": "archive",
+      "src": "assets/galileo/europa-PIA23873.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov",
+      "caption": ""
+    },
+    {
+      "id": "ocean",
+      "kind": "archive",
+      "src": "assets/galileo/ocean-PIA10131.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov",
+      "caption": ""
+    },
+    {
+      "id": "interior",
+      "kind": "archive",
+      "src": "assets/galileo/ocean-PIA26438.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov",
+      "caption": ""
+    },
+    {
+      "id": "crescent",
+      "kind": "archive",
+      "src": "assets/galileo/jupiter-PIA21376.jpg",
+      "license": "public-domain",
+      "source_url": "https://images.nasa.gov",
+      "caption": ""
+    }
+  ],
+  "moods": {
+    "amber": {
+      "lift": [
+        0.06,
+        0.03,
+        -0.02
+      ],
+      "tint": [
+        0.1,
+        0.04,
+        -0.04
+      ],
+      "sat": 0.92,
+      "hue": 30
+    },
+    "steel": {
+      "lift": [
+        0.0,
+        0.01,
+        0.04
+      ],
+      "tint": [
+        -0.04,
+        0.01,
+        0.08
+      ],
+      "sat": 0.78,
+      "hue": 215
+    },
+    "jade": {
+      "lift": [
+        0.0,
+        0.02,
+        0.01
+      ],
+      "tint": [
+        -0.03,
+        0.05,
+        0.02
+      ],
+      "sat": 0.94,
+      "hue": 150
+    },
+    "deep": {
+      "lift": [
+        -0.02,
+        0.0,
+        0.04
+      ],
+      "tint": [
+        -0.03,
+        0.02,
+        0.1
+      ],
+      "sat": 0.72,
+      "hue": 225
+    },
+    "neutral": {
+      "lift": [
+        0,
+        0,
+        0
+      ],
+      "tint": [
+        0,
+        0,
+        0
+      ],
+      "sat": 0.85,
+      "hue": 0
+    }
+  },
+  "acts": [
+    {
+      "id": "a1",
+      "t0": 0.0,
+      "t1": 39.28,
+      "mood": "amber",
+      "title": "出发"
+    },
+    {
+      "id": "a2",
+      "t0": 39.28,
+      "t1": 74.02,
+      "mood": "steel",
+      "title": "慢路"
+    },
+    {
+      "id": "a3",
+      "t0": 74.02,
+      "t1": 112.46,
+      "mood": "jade",
+      "title": "发现"
+    },
+    {
+      "id": "a4",
+      "t0": 112.46,
+      "t1": 144.14,
+      "mood": "deep",
+      "title": "证据"
+    },
+    {
+      "id": "a5",
+      "t0": 144.14,
+      "t1": 180.0,
+      "mood": "amber",
+      "title": "赴死"
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "act": "a1",
+      "t0": 0.0,
+      "t1": 11.53,
+      "asset": "launch",
+      "grade": "amber",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.045,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.4,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "NASA · STS-34 · 1989-10-18"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 0.8,
+          "mode": "accumulate",
+          "lines": [
+            "1989 年 10 月 18 日"
+          ],
+          "accent": [
+            "1989 年"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 5.0,
+          "mode": "accumulate",
+          "lines": [
+            "亚特兰蒂斯号升空"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s02",
+      "act": "a1",
+      "t0": 11.53,
+      "t1": 21.81,
+      "asset": "clean",
+      "grade": "amber",
+      "motion": {
+        "type": "kenburns",
+        "zoom": -0.04,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.4,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "伽利略号 · 总装"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 0.8,
+          "mode": "accumulate",
+          "lines": [
+            "它叫伽利略"
+          ],
+          "accent": []
+        },
+        {
+          "tier": "T1",
+          "t": 2.6,
+          "mode": "accumulate",
+          "lines": [
+            "两吨半 带着一台小探测器"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s03",
+      "act": "a1",
+      "t0": 21.81,
+      "t1": 30.86,
+      "asset": "traj",
+      "grade": "amber",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.045,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.4,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "伽利略号 · 艺术构想"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 0.8,
+          "mode": "accumulate",
+          "lines": [
+            "它要去的木星"
+          ],
+          "accent": []
+        },
+        {
+          "tier": "T1",
+          "t": 2.6,
+          "mode": "accumulate",
+          "lines": [
+            "在六亿公里以外"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s04",
+      "act": "a1",
+      "t0": 30.86,
+      "t1": 39.28,
+      "asset": null,
+      "grade": "amber",
+      "motion": {
+        "type": "static"
+      },
+      "graphics": [
+        {
+          "kind": "grid2d",
+          "depth": 0.25,
+          "params": {
+            "spacing": 68,
+            "alpha": 0.05
+          }
+        },
+        {
+          "kind": "timeline_axis",
+          "overlay": true,
+          "params": {
+            "y": 0.62,
+            "x0": 0.13,
+            "x1": 0.87,
+            "dur": 1.6,
+            "marks": [
+              "1989",
+              "1990",
+              "1991",
+              "1992",
+              "1993",
+              "1994",
+              "1995"
+            ],
+            "active": 0
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.6,
+          "mode": "accumulate",
+          "lines": [
+            "没有一枚火箭"
+          ],
+          "accent": []
+        },
+        {
+          "tier": "T1",
+          "t": 2.4,
+          "mode": "accumulate",
+          "lines": [
+            "能一次把它送到那里"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "brightness": 1.8
+    },
+    {
+      "id": "s05",
+      "act": "a2",
+      "t0": 39.28,
+      "t1": 48.0,
+      "asset": null,
+      "grade": "steel",
+      "motion": {
+        "type": "static"
+      },
+      "graphics": [
+        {
+          "kind": "scatter_axis",
+          "depth": 0.5,
+          "params": {
+            "y": 0.52,
+            "x0": 0.13,
+            "x1": 0.87,
+            "count": 240,
+            "mode": "regular",
+            "dur": 3.6
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.6,
+          "mode": "accumulate",
+          "lines": [
+            "它决定 向行星借力"
+          ],
+          "accent": [
+            "借力"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 3.2470588235294118,
+          "mode": "accumulate",
+          "lines": [
+            "金星一次 地球两次"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "brightness": 1.8
+    },
+    {
+      "id": "s06",
+      "act": "a2",
+      "t0": 48.0,
+      "t1": 58.3,
+      "asset": "jup-io",
+      "grade": "steel",
+      "motion": {
+        "type": "kenburns",
+        "zoom": -0.04,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.4,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "木星与木卫一 · 艺术构想"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 0.8,
+          "mode": "accumulate",
+          "lines": [
+            "1994 年"
+          ],
+          "accent": [
+            "1994 年"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 2.6,
+          "mode": "accumulate",
+          "lines": [
+            "一串彗星碎片 正撞向木星"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s07",
+      "act": "a2",
+      "t0": 58.3,
+      "t1": 66.1,
+      "asset": "scars",
+      "grade": "steel",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.045,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.4,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "NASA · 哈勃望远镜 · 1994"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 0.8,
+          "mode": "accumulate",
+          "lines": [
+            "撞击的疤痕"
+          ],
+          "accent": []
+        },
+        {
+          "tier": "T1",
+          "t": 2.6,
+          "mode": "accumulate",
+          "lines": [
+            "比地球还大"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "brightness": 2.6
+    },
+    {
+      "id": "s08",
+      "act": "a2",
+      "t0": 66.1,
+      "t1": 70.38,
+      "asset": "grs",
+      "grade": "steel",
+      "motion": {
+        "type": "kenburns",
+        "zoom": -0.04,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.8,
+          "mode": "accumulate",
+          "lines": [
+            "那一刻 全人类只有它在场"
+          ],
+          "accent": [
+            "在场"
+          ]
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s09",
+      "act": "a2",
+      "t0": 70.38,
+      "t1": 74.02,
+      "asset": "jup-io",
+      "grade": "steel",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.045,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.8,
+          "mode": "accumulate",
+          "lines": [
+            "六年 它一次次掠过"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "optics": {
+        "crop": [
+          0.1,
+          0.06,
+          0.62,
+          0.62
+        ]
+      }
+    },
+    {
+      "id": "s10",
+      "act": "a3",
+      "t0": 74.02,
+      "t1": 86.78,
+      "asset": "probe",
+      "grade": "jade",
+      "motion": {
+        "type": "kenburns",
+        "zoom": -0.04,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.4,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "伽利略大气探测器 · 艺术构想"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 0.8,
+          "mode": "accumulate",
+          "lines": [
+            "它放出了一个小探测器"
+          ],
+          "accent": []
+        },
+        {
+          "tier": "T1",
+          "t": 3.7411764705882353,
+          "mode": "accumulate",
+          "lines": [
+            "那个探测器 只活了一个小时"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s11",
+      "act": "a3",
+      "t0": 86.78,
+      "t1": 91.35,
+      "asset": "probe-atmo",
+      "grade": "jade",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.045,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.8,
+          "mode": "accumulate",
+          "lines": [
+            "它第一次 尝到了木星的味道"
+          ],
+          "accent": [
+            "味道"
+          ]
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s12",
+      "act": "a3",
+      "t0": 91.35,
+      "t1": 102.54,
+      "asset": "gal-io",
+      "grade": "jade",
+      "motion": {
+        "type": "kenburns",
+        "zoom": -0.04,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.4,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "伽利略号掠过木卫一 · 艺术构想"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 0.8,
+          "mode": "accumulate",
+          "lines": [
+            "它看见木卫一在喷发"
+          ],
+          "accent": []
+        },
+        {
+          "tier": "T1",
+          "t": 3.447058823529412,
+          "mode": "accumulate",
+          "lines": [
+            "太阳系最暴躁的地方"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s13",
+      "act": "a3",
+      "t0": 102.54,
+      "t1": 112.46,
+      "asset": "europa",
+      "grade": "jade",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.045,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.4,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "NASA · 欧罗巴表面 · 伽利略号"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 0.8,
+          "mode": "accumulate",
+          "lines": [
+            "然后是欧罗巴"
+          ],
+          "accent": []
+        },
+        {
+          "tier": "T1",
+          "t": 2.6,
+          "mode": "accumulate",
+          "lines": [
+            "一颗被冰封住的月亮"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s14",
+      "act": "a4",
+      "t0": 112.46,
+      "t1": 122.76,
+      "asset": "chaos",
+      "grade": "deep",
+      "motion": {
+        "type": "kenburns",
+        "zoom": -0.04,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.4,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "NASA · 欧罗巴混沌地形"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 0.8,
+          "mode": "accumulate",
+          "lines": [
+            "冰壳在破裂"
+          ],
+          "accent": []
+        },
+        {
+          "tier": "T1",
+          "t": 2.6,
+          "mode": "accumulate",
+          "lines": [
+            "裂缝里 涌出过温暖的东西"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s15",
+      "act": "a4",
+      "t0": 122.76,
+      "t1": 129.68,
+      "asset": "ocean",
+      "grade": "deep",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.045,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.4,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "欧罗巴冰壳与海洋 · 剖面构想"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 0.8,
+          "mode": "accumulate",
+          "lines": [
+            "冰层下面"
+          ],
+          "accent": [
+            "海"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 2.6,
+          "mode": "accumulate",
+          "lines": [
+            "有一片海"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s16",
+      "act": "a4",
+      "t0": 129.68,
+      "t1": 133.32,
+      "asset": null,
+      "grade": "deep",
+      "motion": {
+        "type": "static"
+      },
+      "graphics": [
+        {
+          "kind": "grid2d",
+          "depth": 0.2,
+          "params": {
+            "spacing": 58,
+            "alpha": 0.04
+          }
+        },
+        {
+          "kind": "wave_stack",
+          "depth": 0.7,
+          "t0": 0.15,
+          "params": {
+            "n": 12,
+            "x0": 0.1,
+            "x1": 0.95,
+            "y0": 0.38,
+            "span": 0.38,
+            "amp": 9,
+            "rise": 1.2,
+            "sum": true,
+            "sumY": 0.72,
+            "seed": 77,
+            "stagger": 0.045
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.6,
+          "mode": "accumulate",
+          "lines": [
+            "它没有看见那片海"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "brightness": 1.8,
+      "camera": {
+        "s0": 1.0,
+        "s1": 1.2,
+        "t0": 0.1,
+        "t1": 5.4,
+        "ease": "easeInOut",
+        "cy": 0.43,
+        "parallax": 0.5
+      }
+    },
+    {
+      "id": "s17",
+      "act": "a4",
+      "t0": 133.32,
+      "t1": 144.14,
+      "asset": null,
+      "grade": "deep",
+      "motion": {
+        "type": "static"
+      },
+      "graphics": [
+        {
+          "kind": "grid2d",
+          "depth": 0.2,
+          "params": {
+            "spacing": 58,
+            "alpha": 0.04
+          }
+        },
+        {
+          "kind": "wave_stack",
+          "depth": 0.7,
+          "t0": 0.15,
+          "params": {
+            "n": 10,
+            "x0": 0.1,
+            "x1": 0.95,
+            "y0": 0.38,
+            "span": 0.38,
+            "amp": 9,
+            "rise": 1.2,
+            "sum": true,
+            "sumY": 0.72,
+            "seed": 77,
+            "stagger": 0.045
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.6,
+          "mode": "accumulate",
+          "lines": [
+            "但它看见了海的证据"
+          ],
+          "accent": [
+            "证据"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 3.2470588235294118,
+          "mode": "accumulate",
+          "lines": [
+            "木星的磁场 在欧罗巴附近抖动"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "brightness": 1.8,
+      "camera": {
+        "s0": 1.0,
+        "s1": 1.2,
+        "t0": 0.1,
+        "t1": 5.4,
+        "ease": "easeInOut",
+        "cy": 0.43,
+        "parallax": 0.5
+      }
+    },
+    {
+      "id": "s18",
+      "act": "a5",
+      "t0": 144.14,
+      "t1": 159.04,
+      "asset": "crescent",
+      "grade": "amber",
+      "motion": {
+        "type": "kenburns",
+        "zoom": -0.04,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T5",
+          "t": 0.4,
+          "pos": "tl",
+          "mode": "fade",
+          "lines": [
+            "木星新月 · 卡西尼号"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 0.8,
+          "mode": "accumulate",
+          "lines": [
+            "2003 年"
+          ],
+          "accent": [
+            "2003 年"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 2.6,
+          "mode": "accumulate",
+          "lines": [
+            "它的燃料快用完了"
+          ],
+          "accent": []
+        },
+        {
+          "tier": "T1",
+          "t": 4.952941176470588,
+          "mode": "accumulate",
+          "lines": [
+            "十四年的辐射 已经毁了它的电路"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "brightness": 1.5
+    },
+    {
+      "id": "s19",
+      "act": "a5",
+      "t0": 159.04,
+      "t1": 167.46,
+      "asset": "interior",
+      "grade": "amber",
+      "motion": {
+        "type": "kenburns",
+        "zoom": 0.045,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.8,
+          "mode": "accumulate",
+          "lines": [
+            "科学家做了一个决定"
+          ],
+          "accent": [
+            "撞向木星"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 3.447058823529412,
+          "mode": "accumulate",
+          "lines": [
+            "让它撞向木星"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    {
+      "id": "s20",
+      "act": "a5",
+      "t0": 167.46,
+      "t1": 171.28,
+      "asset": "chaos",
+      "grade": "amber",
+      "motion": {
+        "type": "kenburns",
+        "zoom": -0.04,
+        "pan": [
+          0.0,
+          0.0
+        ],
+        "ease": "linear"
+      },
+      "graphics": [],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.8,
+          "mode": "accumulate",
+          "lines": [
+            "因为冰下 可能有生命"
+          ],
+          "accent": [
+            "生命"
+          ]
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "optics": {
+        "crop": [
+          0.1,
+          0.06,
+          0.62,
+          0.62
+        ]
+      }
+    },
+    {
+      "id": "s21",
+      "act": "a5",
+      "t0": 171.28,
+      "t1": 180.0,
+      "asset": null,
+      "grade": "amber",
+      "motion": {
+        "type": "static"
+      },
+      "graphics": [
+        {
+          "kind": "grid2d",
+          "depth": 0.2,
+          "params": {
+            "spacing": 58,
+            "alpha": 0.04
+          }
+        },
+        {
+          "kind": "wave_stack",
+          "depth": 0.7,
+          "t0": 0.15,
+          "params": {
+            "n": 8,
+            "x0": 0.1,
+            "x1": 0.95,
+            "y0": 0.38,
+            "span": 0.38,
+            "amp": 9,
+            "rise": 1.2,
+            "sum": true,
+            "sumY": 0.72,
+            "seed": 77,
+            "stagger": 0.045
+          }
+        }
+      ],
+      "texts": [
+        {
+          "tier": "T1",
+          "t": 0.6,
+          "mode": "accumulate",
+          "lines": [
+            "2003 年 9 月 21 日"
+          ],
+          "accent": [
+            "2003 年"
+          ]
+        },
+        {
+          "tier": "T1",
+          "t": 4.8,
+          "mode": "accumulate",
+          "lines": [
+            "18 时 57 分"
+          ],
+          "accent": []
+        }
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "brightness": 2.0,
+      "camera": {
+        "s0": 1.0,
+        "s1": 1.2,
+        "t0": 0.1,
+        "t1": 5.4,
+        "ease": "easeInOut",
+        "cy": 0.43,
+        "parallax": 0.5
+      }
+    }
+  ],
+  "audio": {
+    "track": {
+      "src": "assets/music/Eternal Hope.mp3",
+      "title": "Eternal Hope",
+      "author": "Kevin MacLeod",
+      "license": "CC-BY",
+      "source_url": "https://incompetech.com/music/royalty-free/index.html",
+      "track_start": 12,
+      "gain": 2.8
+    },
+    "envelope": [
+      {
+        "t": 0,
+        "gain": 0.14
+      },
+      {
+        "t": 30,
+        "gain": 0.26
+      },
+      {
+        "t": 60,
+        "gain": 0.32
+      },
+      {
+        "t": 90,
+        "gain": 0.28
+      },
+      {
+        "t": 130,
+        "gain": 0.32
+      },
+      {
+        "t": 160,
+        "gain": 0.36
+      }
+    ]
+  },
+  "credits": {
+    "attribution": [
+      "影像：NASA Image and Video Library（公有领域）",
+      "配乐：Eternal Hope — Kevin MacLeod (incompetech.com)，CC BY 4.0"
+    ]
+  }
+}

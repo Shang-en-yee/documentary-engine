@@ -1,0 +1,18 @@
+{
+  "frame_diff_min": 1.5,
+  "moving_ratio_min": 0.70,
+  "coverage_min": 0.20,
+  "luma_range": [16, 30],
+  "measure_on": "source_frames",
+  "reference_baseline": {
+    "note": "来自参考片《1859-2026》234s@2x 的实测，2 倍速与高亮度会抬高数值，不必追平",
+    "frame_diff": 2.29, "moving": 0.774, "coverage": 0.381, "luma": 31.7
+  },
+  "rules": {
+    "subtitle_max_chars": 22,
+    "reading_rate": [2.0, 5.5],
+    "kenburns_rate_per_sec": [0.2, 1.5],
+    "shot_duration_ratio_min": 3.0,
+    "mood_hue_span_min": 60
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>纪录片引擎</title>
+<link rel="stylesheet" href="css/engine.css">
+<script>
+window.__err = [];
+window.addEventListener('error', e => {
+  window.__err.push(e.message + ' @ ' + (e.filename||'').split('/').pop() + ':' + e.lineno);
+  document.body.innerHTML = '<pre style="color:#ff6b6b;font:15px/1.6 monospace;padding:36px;white-space:pre-wrap;background:#000">' + window.__err.join('\n') + '</pre>';
+});
+window.addEventListener('unhandledrejection', e => {
+  window.__err.push('rejection: ' + e.reason);
+  document.body.innerHTML = '<pre style="color:#ff6b6b;font:15px/1.6 monospace;padding:36px;white-space:pre-wrap;background:#000">' + window.__err.join('\n') + '</pre>';
+});
+</script>
+</head>
+<body>
+<div id="stage">
+  <!-- L0 背景底 -->
+  <div id="bg"></div>
+
+  <!-- 世界层：素材 + 图形 + 调色（文字不受调色影响） -->
+  <div id="world">
+    <div id="asset-wrap"><img id="asset-img" alt=""></div>
+    <canvas id="graphics" width="1920" height="1080"></canvas>
+    <div id="grade"></div>
+  </div>
+
+  <!-- L4 文字层：六层字幕 -->
+  <div id="texts"></div>
+
+  <!-- L5 后期 -->
+  <div id="vignette"></div>
+  <canvas id="grain" width="1920" height="1080"></canvas>
+</div>
+
+<script src="js/core.js"></script>
+<script src="js/asset.js"></script>
+<script src="js/graphics.js"></script>
+<script src="js/graphics-extra.js"></script>
+<script src="js/graphics-camera.js"></script>
+<script src="js/graphics-waves.js"></script>
+<script src="js/text.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
