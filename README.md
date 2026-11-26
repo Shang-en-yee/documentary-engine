@@ -221,6 +221,7 @@ python film.py all     examples/galileo-draft.json        # 约 26 分钟
 
 ## 参考
 
+- **[对参考片的逐帧逆向分析](docs/analysis.md)** —— 完整测量数据与三条实现原理
 - `reference/图形语言.md` —— 对参考片 82–101 秒的逐帧实测（推进 1.7×、五层 alpha、六个动画轨道）
 - `reference/thresholds.json` —— 质检阈值与参考片基线
 - `director/DRAFT.md` —— 剧本格式与生成规则
