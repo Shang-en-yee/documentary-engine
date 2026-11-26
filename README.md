@@ -110,6 +110,14 @@ python film.py selftest             质检器自检（9 项）
 
 ---
 
+## 架构
+
+<p align="center">
+  <img src="docs/architecture.png" width="900" alt="架构图">
+</p>
+
+改动只在 `director/` 发生；渲染器与质检器是稳定的。
+
 ## 模块
 
 ```
